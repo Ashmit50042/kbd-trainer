@@ -70,9 +70,9 @@ ControllerState *PollController()
         const bool *keys = SDL_GetKeyboardState(NULL);
     
         dpad_state = 1 * (keys[SDL_SCANCODE_W] || keys[SDL_SCANCODE_UP]);
-        dpad_state |= 2 * (keys[SDL_SCANCODE_S] || keys[SDL_SCANCODE_DOWN]);
+        dpad_state |= 2 * (keys[SDL_SCANCODE_E] || keys[SDL_SCANCODE_DOWN]);
         dpad_state |= 4 * (keys[SDL_SCANCODE_A] || keys[SDL_SCANCODE_LEFT]);
-        dpad_state |= 8 * (keys[SDL_SCANCODE_D] || keys[SDL_SCANCODE_RIGHT]);
+        dpad_state |= 8 * (keys[SDL_SCANCODE_F] || keys[SDL_SCANCODE_RIGHT]);
         
         // SOCD Cleaning
         
